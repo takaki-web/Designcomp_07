@@ -1,0 +1,12 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+
+// storyセクション
+.p-index-story {
+}
+
+@include m.mq(pc) {
+  .p-index-story {
+  }
+}

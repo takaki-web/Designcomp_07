@@ -1,0 +1,35 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Libre Baskerville", "游明朝体", "Yu Mincho", serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  min-width: 375px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+
+.p-index-location__imgwrapper {
+  background-size: cover;
+  margin: calc(50% - 50vw);
+}

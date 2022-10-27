@@ -1,0 +1,41 @@
+@use "../mixin" as m;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Times New Roman","游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic";
+  font-weight:normal;
+  font-stretch: normal;
+  font-style: normal;
+  min-width: 375px;
+  width: 100%;
+  overflow-x: hidden;
+  letter-spacing: 0;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+.visible-pc{
+  display: none;
+}
+@include m.mq(pc) {
+  .visible-pc{
+    display: block;
+  }
+  .visible-sp{
+    display: none;
+  }
+}

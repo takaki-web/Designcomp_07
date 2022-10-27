@@ -1,0 +1,12 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+
+// conceptセクション
+.p-index-concept {
+}
+
+@include m.mq(pc) {
+  .p-index-concept {
+  }
+}

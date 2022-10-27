@@ -1,0 +1,12 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+
+// contactセクション
+.p-index-contact {
+}
+
+@include m.mq(pc) {
+  .p-index-contact {
+  }
+}

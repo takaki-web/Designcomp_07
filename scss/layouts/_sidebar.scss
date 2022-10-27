@@ -1,0 +1,10 @@
+@use "../foundation/import";
+@use "../mixin" as m;
+// Base (Mobile First)
+
+// sidebarセクション
+.l-index-sidebar {
+}
+
+@include m.mq(pc) {
+}

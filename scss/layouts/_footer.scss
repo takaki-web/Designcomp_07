@@ -1,0 +1,12 @@
+@use "../foundation/import";
+@use "../mixin" as m;
+
+// footerセクション
+.l-index-footer {
+}
+
+
+    @include m.mq(pc) {
+      .l-index-footer {
+          }
+                }
