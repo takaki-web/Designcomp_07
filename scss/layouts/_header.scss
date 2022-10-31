@@ -4,7 +4,122 @@
 
 // headerセクション
 .l-index-header {
+  height: 92px;
+	.burger-btn {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+  }
+  .burger-btn span {
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 2px;
+    left: 6px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    transform: translate(15px,15px);
+    background-color: import.$color-main;
+    }
+    .burger-btn span:nth-child(1) {
+      top: 11px;
+    }
+    .burger-btn span:nth-child(2) {
+      top: 23px;
+    }
+    .burger-btn span:nth-child(3) {
+      top: 35px;
+    }
+    }
+/* ナビ開いてる時のバツボタン */
+.burger-btn.active span:nth-child(1) {
+  top: 36px;
+  left: 21px;
+  background: #fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.burger-btn.active span:nth-child(2),
+.burger-btn.active span:nth-child(3) {
+  top: 36px;
+  left: 21px;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* ナビメニュー内 */
+.burger-menu {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: import.$color-black;
+  text-align: center;
+  width: 86.667%;
+  height: 100%;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+  visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  background: import.$color-bg;
+  overscroll-behavior-y: none;
+  &::before {
+    content: "";
+    background: url(/img/sp/burger-bg.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 86.667%;
+    background-size: 100px; /* ノイズ画像の粗さを調節 */
+    opacity: 0.2;
+  }
+}
+
+.burger-menu ul {
+  text-align: left;
+  margin-left: 4.267vw;
+  margin-top: 98px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 54px repeat(5, 32px) 121px repeat(3, 16px);
+  grid-column-gap: 0px;
+  grid-row-gap: 16px;
+}
+
+.burger-menu__link {
+  transition: 0.4s all;
+}
+.burger-menu__link:nth-of-type(1){
+  font-size: 2.0rem;
+  color:import.$color-main;
+  &::before{
+    content:url(/img/component/logo.png);
+  }
+  display: flex;
+  gap: 1ch;
+}
+
+/* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
+nav.burger-menu.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 @include m.mq(pc) {
+  .l-index-header {
+    height: 120px;
+  }
 }
