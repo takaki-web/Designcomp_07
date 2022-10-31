@@ -4,9 +4,126 @@
 
 // contactセクション
 .p-index-contact {
+  background-color: import.$color-bg;
+  padding-bottom: 56px;
+  .p-index-contact__title {
+    margin: 0 auto;
+    font-size: 3.2rem;
+    writing-mode: vertical-rl;
+    letter-spacing: 15px;
+    span {
+      display: block;
+      font-size: 1.4rem;
+      letter-spacing: 0;
+      transform: translateY(5px);
+      margin-left: 16px;
+    }
+  }
+  .p-index-contact__grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 368px 328px;
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+  }
+  .p-index-contact__grid-item:nth-of-type(1) {
+    margin-top: 40px;
+  }
+  .p-index-contact__list {
+    text-align: center;
+  }
+  .p-index-contact__list-text {
+    font-size: 1.4rem;
+    padding-bottom: 40px;
+  }
+  .p-index-contact__list-tell {
+    font-size: 2rem;
+    span {
+      padding-right: 24px;
+    }
+  }
+  .p-index-contact__list-fax {
+    font-size: 2rem;
+    span {
+      padding-right: 24px;
+    }
+  }
+  .p-index-contact__list-reception {
+    margin-top: 40px;
+    font-size: 1.4rem;
+    span {
+      padding-right: 16px;
+    }
+  }
+  .p-index-contact__list-form-wrapper {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 343px;
+    height: 66px;
+    border: 1px solid import.$color-black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-index-contact__list-form-text::before {
+    content: url(/img/component/icon.png);
+    padding-right: 5px;
+  }
 }
 
 @include m.mq(pc) {
   .p-index-contact {
+    padding-bottom: 0;
+    .p-index-contact__grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 62px;
+      grid-template-rows: 480px;
+      grid-column-gap: 9.375vw;
+      grid-row-gap: 0px;
+    }
+    .p-index-contact__grid-item:nth-of-type(1) {
+      grid-area: 1 / 2 / 2 / 3;
+      margin-top: 80px;
+    }
+    .p-index-contact__grid-item:nth-of-type(2) {
+      margin-top: 132px;
+    }
+    .p-index-contact__list-text {
+      padding-bottom: 32px;
+      transform: translateX(-25px);
+    }
+    .p-index-contact__list:nth-of-type(2){
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .p-index-contact__list-tell {
+      span {
+        padding-right: 10px;
+      }
+    }
+    .p-index-contact__list-fax {
+      margin-left: 45px;
+      span {
+        padding-right: 10px;
+      }
+    }
+
+    .p-index-contact__list-reception {
+      margin-top: 32px;
+      transform: translateX(-65px);
+    }
+    .p-index-contact__list-form-wrapper {
+      margin-top: 16px;
+      width: 360px;
+      height: 64px;
+    }
+    .p-index-contact__list-form-text::before {
+      content: url(/img/component/icon.png);
+      padding-right: 5px;
+    }
+
   }
 }
