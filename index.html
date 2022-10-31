@@ -9,10 +9,7 @@
     <!-- サイトのタイトル -->
     <title>環普</title>
     <!-- サイトの説明文 -->
-    <meta
-      name="description"
-      content="安心の暮らしを　この街でずっと"
-    />
+    <meta name="description" content="安心の暮らしを　この街でずっと" />
     <!-- サイトの種類 -->
     <meta property="og:type" content="website" />
     <!-- サイトの言語情報 -->
@@ -25,6 +22,10 @@
     <link rel="stylesheet" href="/css/destyle.css" />
     <!-- commoncss読み込み-->
     <link rel="stylesheet" href="/css/common.css" />
+    <!-- slickcss読み込み-->
+    <link rel="stylesheet" href="/css/slick.css" />
+    <!-- slickcss読み込み-->
+    <link rel="stylesheet" href="/css/slick-theme.css" />
     <!--サイト読み込み高速化-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,26 +36,570 @@
 
   <body>
     <header class="l-index-header">
-    </header><!-- /.l-index-header -->
+      <!-- ここからハンバーガーメニュー -->
+      <div class="burger-btn visible-sp js-burger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="burger-menu js-burger-menu">
+        <ul id="menu">
+          <li class="burger-menu__link">
+            <a href="#">環普</a>
+          </li>
+          <li class="burger-menu__link">
+            <a href="#concept">コンセプト</a>
+          </li>
+          <li class="burger-menu__link">
+            <a href="#story">建築事例</a>
+          </li>
+          <li class="burger-menu__link">
+            <a href="#service">こだわりの家づくり</a>
+          </li>
+          <li class="burger-menu__link">
+            <a href="#about">家づくりへの思い</a>
+          </li>
+          <li class="burger-menu__link">
+            <a href="#blog">ブログ</a>
+          </li>
+          <li class="burger-menu__link">
+            <a href="#contact">お問い合わせ</a>
+          </li>
+          <li class="burger-menu__link">
+            <a href="#">Twitter</a>
+          </li>
+          <li class="burger-menu__link">
+            <a href="#">Facebook</a>
+          </li>
+          <li class="burger-menu__link">
+            <a href="#">Instagram</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- ここまでハンバーガーメニュー -->
+    </header>
+    <!-- /.l-index-header -->
 
-    <section class="l-index-sidebar">
-    </section><!-- /.l-index-sidebar -->
+    <section class="l-index-sidebar visible-pc">
+      <ul class="l-index-sidebar__lists">
+        <li class="l-index-sidebar__list">
+          <a href="#">環普</a>
+        </li>
+        <li class="l-index-sidebar__list">
+          <a href="#concept">コンセプト</a>
+        </li>
+        <li class="l-index-sidebar__list">
+          <a href="#story">建築事例</a>
+        </li>
+        <li class="l-index-sidebar__list">
+          <a href="#service">こだわりの家づくり</a>
+        </li>
+        <li class="l-index-sidebar__list">
+          <a href="#about">家づくりへの思い</a>
+        </li>
+        <li class="l-index-sidebar__list">
+          <a href="#blog">ブログ</a>
+        </li>
+        <li class="l-index-sidebar__list">
+          <a href="#contact">お問い合わせ</a>
+        </li>
+        <li class="l-index-sidebar__list">
+          <a href="#">Twitter</a>
+        </li>
+        <li class="l-index-sidebar__list">
+          <a href="#">Facebook</a>
+        </li>
+        <li class="l-index-sidebar__list">
+          <a href="#">Instagram</a>
+        </li>
+      </ul>
+    </section>
+    <!-- /.l-index-sidebar -->
 
     <section class="p-index-fv">
+      <picture class="p-index-fv__img-wrapper">
+        <source
+          media="(min-width:1250px)"
+          srcset="img/pc/fv-pc.png 1x, img/pc/fv-pc@2x.png 2x"
+        />
+        <img loading='lazy' src=img/sp/fv-sp.png srcset=' img/sp/fv-sp.png 1x,
+        img/sp/fv-sp@2x.png 2x ' alt='fv' />
+      </picture>
+      <!-- /p-index-fv__img-wrapper -->
+      <h1 class="p-index-fv__heading-wrapper">
+        <p class="p-index-fv__heading-text">安心の暮らしを</p>
+        <!-- /.p-index-fv__heading-text -->
+        <p class="p-index-fv__heading-text">この街でずっと</p>
+        <!-- /.p-index-fv__heading-text -->
+      </h1>
+      <!-- /.p-index-fv__heading-wrapper -->
     </section>
     <!-- /.p-index-fv -->
 
-    <section class="p-index-concept"></section><!-- /.p-index-concept -->
-    <section class="p-index-story"></section><!-- /.p-index-story -->
-    <section class="p-index-service"></section><!-- /.p-index-service -->
-    <section class="p-index-about"></section><!-- /.p-index-about -->
-    <section class="p-index-blog"></section><!-- /.p-index-blog -->
-    <section class="p-index-access"></section><!-- /.p-index-access -->
-    <section class="p-index-contact"></section><!-- /.p-index-contact -->
+    <section class="p-index-concept c-section" id="concept">
+      <div class="c-section__inner">
+        <div class="p-index-concept__grid-wrapper">
+          <div class="p-index-concept__grid-item">
+            <h2 class="p-index-concept__title">
+              <span>CONCEPT</span>
+              自然の中で暮らすような家
+            </h2>
+            <!-- /.p-index-concept__title -->
+            <p class="p-index-concept__text">
+              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト。
+              <span
+                >サンプルテキストサンプルテキストサンプルテキストサンプルテキスト、サンプルテキストサンプルテキストサンプルテキストサンプルテキスト。</span
+              >
+            </p>
+            <!-- /.p-index-concept__text -->
+            <div class="p-index-concept__more">詳しく見る</div>
+            <!-- /.p-index-concept__more -->
+          </div>
+          <!-- /.p-index-concept__grid-item -->
+          <div class="p-index-concept__grid-item">
+            <picture class="p-index-concept__img-wrapper">
+              <source
+                media="(min-width:1250px)"
+                srcset="img/pc/concept-pc.png 1x, img/pc/concept-pc@2x.png 2x"
+              />
+              <img loading='lazy' src=img/sp/concept-sp.png srcset='
+              img/sp/concept-sp.png 1x, img/sp/concept-sp@2x.png 2x '
+              alt='concept' />
+            </picture>
+            <!-- /p-index-concept__img-wrapper -->
+          </div>
+          <!-- /.p-index-concept__grid-item -->
+        </div>
+        <!-- /.p-index-concept__grid-wrapper -->
+      </div>
+      <!-- /.c-section__inner -->
+    </section>
+    <!-- /.p-index-concept -->
+    <section class="p-index-story c-section" id="story">
+      <div class="c-section__inner">
+        <h2 class="p-index-story__title">
+          <span>STORY</span>
+          建築事例
+        </h2>
+        <!-- /.p-index-story__title -->
+        <p class="p-index-story__text">
+          サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト。
+        </p>
+        <!-- /.p-index-story__text -->
+        <div class="p-index-story__slider-wrapper">
+          <ul class="p-index-story__lists" id="js-p-index-story__slider">
+            <li class="p-index-story__list">
+              <picture class="p-index-story__img-wrapper">
+                <source
+                  media="(min-width:1250px)"
+                  srcset="img/pc/story01-pc.png 1x, img/pc/story01-pc@2x.png 2x"
+                />
+                <img loading='lazy' src=img/sp/story01-sp.png srcset='
+                img/sp/story01-sp.png 1x, img/sp/story01-sp@2x.png 2x '
+                alt='story01' />
+              </picture>
+              <!-- /p-index-story__img-wrapper -->
+              <h3 class="p-index-story__list-title">タイトルタイトル</h3>
+              <!-- /.p-index-story__list-title -->
+              <p class="p-index-story__list-text">
+                サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+              </p>
+              <!-- /.p-index-story__list-text -->
+            </li>
+            <!-- /.p-index-story__list -->
+            <li class="p-index-story__list">
+              <picture class="p-index-story__img-wrapper">
+                <source
+                  media="(min-width:1250px)"
+                  srcset="img/pc/story02-pc.png 1x, img/pc/story02-pc@2x.png 2x"
+                />
+                <img loading='lazy' src=img/sp/story02-sp.png srcset='
+                img/sp/story02-sp.png 1x, img/sp/story02-sp@2x.png 2x '
+                alt='story02' />
+              </picture>
+              <!-- /p-index-story__img-wrapper -->
+              <h3 class="p-index-story__list-title">タイトルタイトル</h3>
+              <!-- /.p-index-story__list-title -->
+              <p class="p-index-story__list-text">
+                サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+              </p>
+              <!-- /.p-index-story__list-text -->
+            </li>
+            <!-- /.p-index-story__list -->
+            <li class="p-index-story__list">
+              <picture class="p-index-story__img-wrapper">
+                <source
+                  media="(min-width:1250px)"
+                  srcset="img/pc/story03-pc.png 1x, img/pc/story03-pc@2x.png 2x"
+                />
+                <img loading='lazy' src=img/sp/story03-sp.png srcset='
+                img/sp/story03-sp.png 1x, img/sp/story03-sp@2x.png 2x '
+                alt='story03' />
+              </picture>
+              <!-- /p-index-story__img-wrapper -->
+              <h3 class="p-index-story__list-title">タイトルタイトル</h3>
+              <!-- /.p-index-story__list-title -->
+              <p class="p-index-story__list-text">
+                サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+              </p>
+              <!-- /.p-index-story__list-text -->
+            </li>
+            <!-- /.p-index-story__list -->
+            <li class="p-index-story__list">
+              <picture class="p-index-story__img-wrapper">
+                <source
+                  media="(min-width:1250px)"
+                  srcset="img/pc/story04-pc.png 1x, img/pc/story04-pc@2x.png 2x"
+                />
+                <img loading='lazy' src=img/sp/story04-sp.png srcset='
+                img/sp/story04-sp.png 1x, img/sp/story04-sp@2x.png 2x '
+                alt='story04' />
+              </picture>
+              <!-- /p-index-story__img-wrapper -->
+              <h3 class="p-index-story__list-title">タイトルタイトル</h3>
+              <!-- /.p-index-story__list-title -->
+              <p class="p-index-story__list-text">
+                サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+              </p>
+              <!-- /.p-index-story__list-text -->
+            </li>
+            <!-- /.p-index-story__list -->
+          </ul>
+          <!-- /.p-index-story__lists -->
+        </div>
+        <!-- /.p-index-story__slider-wrapper -->
+        <div class="p-index-story__scroll">scroll</div>
+        <!-- /.p-index-story__scroll -->
+      </div>
+      <!-- /.c-section__inner -->
+    </section>
+    <!-- /.p-index-story -->
+    <section class="p-index-service c-section" id="service">
+      <div class="c-section__inner">
+        <div class="p-index-service__grid-wrapper">
+          <h2 class="p-index-service__title">
+            <span>SERVICE</span>
+            こだわりの家づくり
+          </h2>
+          <!-- /.p-index-service__title -->
+          <div class="p-index-service__grid-item">
+            <picture class="p-index-service__img-wrapper">
+              <source
+                media="(min-width:1250px)"
+                srcset="img/pc/service-pc.png 1x, img/pc/service-pc@2x.png 2x"
+              />
+              <img loading='lazy' src=img/sp/service-sp.png srcset='
+              img/sp/service-sp.png 1x, img/sp/service-sp@2x.png 2x '
+              alt='service' />
+            </picture>
+            <!-- /p-index-service__img-wrapper -->
+            <h3 class="p-index-service__grid-title">タイトルタイトル</h3>
+            <!-- /.p-index-service__grid-title -->
+            <p class="p-index-service__grid-text">
+              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+            </p>
+            <!-- /.p-index-service__grid-text -->
+          </div>
+          <!-- /.p-index-service__grid-item -->
+          <div class="p-index-service__grid-item">
+            <picture class="p-index-service__img-wrapper">
+              <source
+                media="(min-width:1250px)"
+                srcset="img/pc/service-pc.png 1x, img/pc/service-pc@2x.png 2x"
+              />
+              <img loading='lazy' src=img/sp/service-sp.png srcset='
+              img/sp/service-sp.png 1x, img/sp/service-sp@2x.png 2x '
+              alt='service' />
+            </picture>
+            <!-- /p-index-service__img-wrapper -->
+            <h3 class="p-index-service__grid-title">タイトルタイトル</h3>
+            <!-- /.p-index-service__grid-title -->
+            <p class="p-index-service__grid-text">
+              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+            </p>
+            <!-- /.p-index-service__grid-text -->
+          </div>
+          <!-- /.p-index-service__grid-item -->
+          <div class="p-index-service__grid-item">
+            <picture class="p-index-service__img-wrapper">
+              <source
+                media="(min-width:1250px)"
+                srcset="img/pc/service-pc.png 1x, img/pc/service-pc@2x.png 2x"
+              />
+              <img loading='lazy' src=img/sp/service-sp.png srcset='
+              img/sp/service-sp.png 1x, img/sp/service-sp@2x.png 2x '
+              alt='service' />
+            </picture>
+            <!-- /p-index-service__img-wrapper -->
+            <h3 class="p-index-service__grid-title">タイトルタイトル</h3>
+            <!-- /.p-index-service__grid-title -->
+            <p class="p-index-service__grid-text">
+              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+            </p>
+            <!-- /.p-index-service__grid-text -->
+          </div>
+          <!-- /.p-index-service__grid-item -->
+        </div>
+        <!-- /.p-index-service__grid-wrapper -->
+        <div class="p-index-service__look">一覧を見る</div>
+        <!-- /.p-index-service__scroll -->
+      </div>
+      <!-- /.c-section__inner -->
+    </section>
+    <!-- /.p-index-service -->
+    <section class="p-index-about" id="about">
+      <div class="c-section__inner">
+        <div class="p-index-about__grid-wrapper">
+          <h2 class="p-index-about__title">
+            <span>ABOUT</span>
+            家造りへの思い
+          </h2>
+          <!-- /.p-index-about__title -->
+          <picture class="p-index-about__img-wrapper">
+            <source
+              media="(min-width:1250px)"
+              srcset="img/pc/about-pc.png 1x, img/pc/about-pc@2x.png 2x"
+            />
+            <img loading='lazy' src=img/sp/about-sp.png srcset='
+            img/sp/about-sp.png 1x, img/sp/about-sp@2x.png 2x ' alt='about' />
+          </picture>
+          <!-- /p-index-about__img-wrapper -->
+          <div class="p-index-about__content-wrapper">
+            <p class="p-index-about__text">
+              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルサンプルテキストサンプルテキストサンプルテキストサンプルテキスト。
+              <span
+                >サンプルテキストサンプルテキストサンプルテキストサンプルテキスト、</span
+              >
+              <span
+                >サンプルテキストサンプルテキストサンプルテキストサンプルテキスト。</span
+              >
+            </p>
+            <!-- /.p-index-about__text -->
+            <div class="p-index-about__details">詳しく見る</div>
+            <!-- /.p-index-about__details -->
+          </div>
+          <!-- /.p-index-about__content-wrapper -->
+        </div>
+        <!-- /.p-index-about__grid-wrapper -->
+      </div>
+      <!-- /.c-section__inner -->
+    </section>
+    <!-- /.p-index-about -->
+    <section class="p-index-blog c-section" id="blog">
+      <div class="c-section__inner">
+        <div class="p-index-blog__grid-wrapper">
+          <h2 class="p-index-blog__title">
+            <span>BLOG</span>
+            ブログ
+          </h2>
+          <!-- /.p-index-blog__title -->
+            <div class="p-index-blog__grid-item">
+              <picture class="p-index-blog__img-wrapper">
+                <source
+                  media="(min-width:1250px)"
+                  srcset="img/pc/blog-pc.png 1x, img/pc/blog-pc@2x.png 2x"
+                />
+                <img loading='lazy' src=img/sp/blog-sp.png srcset='
+                img/sp/blog-sp.png 1x, img/sp/blog-sp@2x.png 2x ' alt='blog' />
+              </picture>
+              <!-- /p-index-blog__img-wrapper -->
+              <div class="p-index-blog__grid-date">2022.1.14</div>
+              <!-- /.p-index-blog__grid-date -->
+              <h3 class="p-index-blog__grid-title">タイトルタイトル</h3>
+              <!-- /.p-index-blog__grid-title -->
+              <p class="p-index-blog__grid-text">
+                サンプルテキストサンプルテキスト
+                サンプルテキストサンプルテキスト
+              </p>
+              <!-- /.p-index-blog__grid-text -->
+            </div>
+            <!-- /.p-index-blog__grid-item -->
+            <div class="p-index-blog__grid-item">
+              <picture class="p-index-blog__img-wrapper">
+                <source
+                  media="(min-width:1250px)"
+                  srcset="img/pc/blog-pc.png 1x, img/pc/blog-pc@2x.png 2x"
+                />
+                <img loading='lazy' src=img/sp/blog-sp.png srcset='
+                img/sp/blog-sp.png 1x, img/sp/blog-sp@2x.png 2x ' alt='blog' />
+              </picture>
+              <!-- /p-index-blog__img-wrapper -->
+              <div class="p-index-blog__grid-date">2022.1.14</div>
+              <!-- /.p-index-blog__grid-date -->
+              <h3 class="p-index-blog__grid-title">タイトルタイトル</h3>
+              <!-- /.p-index-blog__grid-title -->
+              <p class="p-index-blog__grid-text">
+                サンプルテキストサンプルテキスト
+                サンプルテキストサンプルテキスト
+              </p>
+              <!-- /.p-index-blog__grid-text -->
+            </div>
+            <!-- /.p-index-blog__grid-item -->
+            <div class="p-index-blog__grid-item">
+              <picture class="p-index-blog__img-wrapper">
+                <source
+                  media="(min-width:1250px)"
+                  srcset="img/pc/blog-pc.png 1x, img/pc/blog-pc@2x.png 2x"
+                />
+                <img loading='lazy' src=img/sp/blog-sp.png srcset='
+                img/sp/blog-sp.png 1x, img/sp/blog-sp@2x.png 2x ' alt='blog' />
+              </picture>
+              <!-- /p-index-blog__img-wrapper -->
+              <div class="p-index-blog__grid-date">2022.1.14</div>
+              <!-- /.p-index-blog__grid-date -->
+              <h3 class="p-index-blog__grid-title">タイトルタイトル</h3>
+              <!-- /.p-index-blog__grid-title -->
+              <p class="p-index-blog__grid-text">
+                サンプルテキストサンプルテキスト
+                サンプルテキストサンプルテキスト
+              </p>
+              <!-- /.p-index-blog__grid-text -->
+            </div>
+            <!-- /.p-index-blog__grid-item -->
+        </div>
+        <!-- /.p-index-blog__grid-wrapper -->
+        <div class="p-index-blog__look">一覧を見る</div>
+        <!-- /.p-index-blog__scroll -->
+      </div>
+      <!-- /.c-section__inner -->
+    </section>
+    <!-- /.p-index-blog -->
+    <section class="p-index-access c-section" id="access">
+      <div class="c-section__inner">
+        <div class="p-index-access__grid-wrapper">
+          <div class="p-index-access__grid-item">
+            <h2 class="p-index-access__title">
+              <span>ACCESS</span>
+              所在地
+            </h2>
+            <!-- /.p-index-access__title -->
+            <p class="p-index-access__address">
+              〒 811-1111
+              <span>福岡県福岡市中央区天神２丁目１−１</span>
+            </p>
+            <!-- /.p-index-access__address -->
+          </div>
+          <!-- /.p-index-access__grid-item -->
+          <div class="p-index-access__grid-item">
+            <picture class="p-index-access__img-wrapper">
+              <iframe class="visible-sp" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6647.181281426178!2d130.40243765125274!3d33.5899764063868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1667179729778!5m2!1sja!2sjp" width="343" height="214" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe class="visible-pc" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6647.181281426178!2d130.40243765125274!3d33.5899764063868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1667179729778!5m2!1sja!2sjp" width="640" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </picture>
+            <!-- /p-index-access__img-wrapper -->
+          </div>
+          <!-- /.p-index-access__grid-item -->
+        </div>
+        <!-- /.p-index-access__grid-wrapper -->
+      </div>
+      <!-- /.c-section__inner -->
+    </section>
+    <!-- /.p-index-access -->
+    <section class="p-index-contact c-section" id="contact">
+      <div class="c-section__inner">
+        <div class="p-index-contact__grid-wrapper">
+          <div class="p-index-contact__grid-item">
+            <h2 class="p-index-contact__title">
+              <span>CONTACT</span>
+              お問い合わせ
+            </h2>
+            <!-- /.p-index-contact__title -->
+          </div>
+          <!-- /.p-index-contact__grid-item -->
+          <div class="p-index-contact__grid-item">
+            <ul class="p-index-contact__lists">
+              <li class="p-index-contact__list">
+                <p class="p-index-contact__list-text">
+                  ご質問・ご相談は、お気軽にお問い合わせ下さい
+                </p>
+                <!-- /.p-index-contact__list-text -->
+              </li>
+              <!-- /.p-index-contact__list -->
+              <li class="p-index-contact__list">
+                <div class="p-index-contact__list-tell">
+                  <span>TEL</span>092-111-1111
+                </div>
+                <!-- /.p-index-contact__list-tell -->
+                <div class="p-index-contact__list-fax">
+                  <span>FAX</span>092-111-1111
+                </div>
+                <!-- /.p-index-contact__list-fax -->
+              </li>
+              <!-- /.p-index-contact__list -->
+              <li class="p-index-contact__list">
+                <div class="p-index-contact__list-reception">
+                  <span>受付時間</span>8:00~17:00(日・祝日除く)
+                </div>
+                <!-- /.p-index-contact__list-reception -->
+              </li>
+              <!-- /.p-index-contact__list -->
+              <li class="p-index-contact__list">
+                <div class="p-index-contact__list-form-wrapper">
+                  <div class="p-index-contact__list-form-text">
+                    お問い合わせフォーム
+                  </div>
+                  <!-- /.p-index-contact__list-form-text -->
+                </div>
+                <!-- /.p-index-contact__list-form-wrapper -->
+              </li>
+              <!-- /.p-index-contact__list -->
+            </ul>
+            <!-- /.p-index-contact__lists -->
+          </div>
+          <!-- /.p-index-contact__grid-item -->
+        </div>
+        <!-- /.p-index-contact__grid-wrapper -->
+      </div>
+      <!-- /.c-section__inner -->
+    </section>
+    <!-- /.p-index-contact -->
     <footer class="l-index-footer">
+      <div class="l-index-footer__grid-wrapper">
+        <div class="l-index-footer__grid-item">
+          <ul class="l-index-footer__lists">
+            <li class="l-index-footer__list-company">株式会社　環普</li>
+            <!-- /.l-index-footer__list -->
+            <li class="l-index-footer__list-address">
+              <span>〒811-1111</span> 福岡県福岡市中央区天神２丁目１−１
+            </li>
+            <!-- /.l-index-footer__list -->
+          </ul>
+          <!-- /.l-index-footer__lists -->
+        </div>
+        <!-- /.l-index-footer__grid-item -->
+        <div class="l-index-footer__grid-item">
+          <ul class="l-index-footer__lists">
+            <li class="l-index-footer__list">
+             <a href="#concept">コンセプト</a></li>
+            <!-- /.l-index-footer__list -->
+            <li class="l-index-footer__list">
+              <a href="#story">建築事例</a></li>
+            <!-- /.l-index-footer__list -->
+            <li class="l-index-footer__list">
+              <a href="#service">こだわりの家づくり</a></li>
+            <!-- /.l-index-footer__list -->
+            <li class="l-index-footer__list">
+              <a href="#about">家づくりへの思い</a></li>
+            <!-- /.l-index-footer__list -->
+            <li class="l-index-footer__list">
+              <a href="#blog">ブログ</a></li>
+            <!-- /.l-index-footer__list -->
+          </ul>
+          <!-- /.l-index-footer__lists -->
+        </div>
+        <!-- /.l-index-footer__grid-item -->
+        <div class="l-index-footer__grid-item">
+          <li class="l-index-footer__list-contact">お問い合わせ</li>
+          <!-- /.l-index-footer__list -->
+          <li class="l-index-footer__list-privacy">個人情報保護方針</li>
+          <!-- /.l-index-footer__list -->
+        </div>
+        <!-- /.l-index-footer__grid-item -->
+      </div>
+      <!-- /.l-index-footer__grid-wrapper -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/public/assets/js/script.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/slick.min.js"></script>
     <div id="fb-root"></div>
     <script
       async

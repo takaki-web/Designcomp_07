@@ -1,0 +1,20 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+
+// Base (Mobile First)
+
+.c-section__inner {
+	width: 91.467vw;
+	margin: 0 auto;
+	position: relative;
+}
+
+@include m.mq(pc) {
+  .c-section__inner {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0;
+    margin-right:8.333vw;
+  }
+
+}

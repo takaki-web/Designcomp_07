@@ -8,7 +8,15 @@
 @use "./layouts/footer";
 @use "./layouts/sidebar";
 // コンポーネント(再利用可能なCSS)
+@use "./objects/components/inner";
 // プロジェクト(ページごとの固有CSS)
 @use "./objects/projects/fv";
+@use "./objects/projects/concept";
+@use "./objects/projects/story";
+@use "./objects/projects/service";
+@use "./objects/projects/about";
+@use "./objects/projects/blog";
+@use "./objects/projects/access";
+@use "./objects/projects/contact";
 // Utilities
 // @use "./objects/utilities";
