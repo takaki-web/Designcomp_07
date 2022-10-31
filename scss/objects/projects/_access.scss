@@ -4,9 +4,54 @@
 
 // accessセクション
 .p-index-access {
+  padding-bottom: 40px;
+  .p-index-access__grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 118px 214px;
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+    margin-top: 40px;
+  }
+  .p-index-access__grid-item {
+    display: flex;
+    justify-content: center;
+  }
+  .p-index-access__title {
+    font-size: 2.4rem;
+    span {
+      display: block;
+      font-size: 1.4rem;
+      padding-bottom: 8px;
+    }
+  }
+  .p-index-access__address {
+    margin-top: 24px;
+    span {
+      display: block;
+      margin-top: 8px;
+    }
+  }
 }
 
 @include m.mq(pc) {
   .p-index-access {
+    padding-bottom: 64px;
+    .p-index-access__grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 272px;
+      grid-template-rows: 400px;
+      grid-column-gap: 120px;
+      grid-row-gap: 0px;
+    }
+    .p-index-access__grid-item {
+      display: flex;
+      flex-direction:column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .p-index-access__grid-item:nth-of-type(1) {
+      grid-area: 1 / 2 / 2 / 3;
+    }
   }
 }
