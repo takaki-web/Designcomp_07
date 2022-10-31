@@ -4,9 +4,49 @@
 
 // fvセクション
 .p-index-fv {
+  padding-bottom: 40px;
+  .p-index-fv__img-wrapper {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      /*外枠からはみ出さないように調整*/
+      max-height: 1000px;
+      /*アスペクト比の維持*/
+      aspect-ratio: 15/23;
+    }
+  }
+  .p-index-fv__heading-text {
+    position: absolute;
+    top: 40px;
+    background-color: #fff;
+    writing-mode: vertical-rl;
+    font-size: 3.2rem;
+    letter-spacing: 18px;
+    right: 4.267vw;
+  }
+  .p-index-fv__heading-text:nth-of-type(2) {
+    transform: translateX(-56px);
+  }
 }
 
 @include m.mq(pc) {
   .p-index-fv {
+    padding-bottom: 172px;
+    .p-index-fv__img-wrapper {
+      justify-content: end;
+      img {
+        width: 1120px;
+        aspect-ratio: inherit;
+      }
+    }
+
+    .p-index-fv__heading-text {
+      top: 80px;
+      right: 13.889vw;
+    }
+    .p-index-fv__heading-text:nth-of-type(2) {
+      transform: translateX(-56px);
+    }
   }
 }
