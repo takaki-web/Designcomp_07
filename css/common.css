@@ -248,7 +248,7 @@ nav.l-header__burger-menu.active {
   }
   .l-sidebar::before {
     content: "";
-    background: url(/img/sp/burger-bg.png);
+    background: url(/img/sp/burger-bg.webp);
     position: absolute;
     top: 0;
     left: 0;
