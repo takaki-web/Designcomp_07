@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+  <head prefix="og:http://ogp.me/ns#">
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--検索エンジンの対象外にする-->
     <meta name="robots" content="noindex,nofollow" />
     <!-- サイトのタイトル -->
-    <title>環普</title>
+    <title>環普建設</title>
     <!-- サイトの説明文 -->
-    <meta name="description" content="安心の暮らしを　この街でずっと" />
+    <meta
+      name="description"
+      content="安心の暮らしを　この街でずっと"
+    />
+    <!-- ページのタイトル -->
+    <meta
+      property="og:title"
+      content="環普建設"
+    />
+    <!-- ページの説明文 -->
+    <meta
+      property="og:description"
+      content="安心の暮らしを　この街でずっと"
+    />
+    <!-- ページのURL -->
+    <meta property="og:url" content="本番環境の絶対パスを入れる" />
+    <!-- サムネイル画像のURL 1200*630-->
+    <meta property="og:image" content="/img/thumbnail.png" />
+    <!-- サイトの名前 -->
+    <meta
+      property="og:site_name"
+      content="環普建設"
+    />
     <!-- サイトの種類 -->
     <meta property="og:type" content="website" />
     <!-- サイトの言語情報 -->
     <meta property="og:locale" content="ja_JP" />
+    <!-- レガシーブラウザ用のfavicon.ico 32×32-->
+    <link rel="icon" href="/img/favicon.ico" sizes="any" />
+    <!-- モダンブラウザ用のSVGアイコン（ライト・ダーク） -->
+    <link rel="icon" href="/img/icon.svg" type="image/svg+xml" />
+    <!-- Appleデバイス用の180×180のPNGアイコン -->
     <link
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      rel="stylesheet"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
     />
-    <!-- reset.css destyle -->
+    <!-- Androidデバイス用の192×192と512×512のPNGアイコンを含むWebアプリマニフェスト -->
+    <link rel="manifest" href="/img/webmanifest.json" />
+    <!-- reset.css リセットstyle -->
     <link rel="stylesheet" href="/css/destyle.css" />
     <!-- commoncss読み込み-->
     <link rel="stylesheet" href="/css/common.css" />
-    <!-- slickcss読み込み-->
-    <link rel="stylesheet" href="/css/slick.css" />
-    <!-- slickcss読み込み-->
-    <link rel="stylesheet" href="/css/slick-theme.css" />
+        <!-- slickcss読み込み-->
+        <link rel="stylesheet" href="/css/slick.css" />
+        <!-- slickcss読み込み-->
+        <link rel="stylesheet" href="/css/slick-theme.css" />
     <!--サイト読み込み高速化-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,95 +64,95 @@
   </head>
 
   <body>
-    <header class="l-index-header">
+    <header class="l-header">
       <!-- ここからハンバーガーメニュー -->
-      <div class="burger-btn visible-sp js-burger-btn">
+      <div class="l-header__burger-btn visible-sp js-l-header__burger-btn">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <nav class="burger-menu js-burger-menu">
+      <nav class="l-header__burger-menu js-l-header__burger-menu">
         <ul id="menu">
-          <li class="burger-menu__link">
-            <a href="#">環普</a>
+          <li class="l-header__burger-menu-link">
+            <a href="#">環普建設</a>
           </li>
-          <li class="burger-menu__link">
+          <li class="l-header__burger-menu-link">
             <a href="#concept">コンセプト</a>
           </li>
-          <li class="burger-menu__link">
+          <li class="l-header__burger-menu-link">
             <a href="#story">建築事例</a>
           </li>
-          <li class="burger-menu__link">
+          <li class="l-header__burger-menu-link">
             <a href="#service">こだわりの家づくり</a>
           </li>
-          <li class="burger-menu__link">
+          <li class="l-header__burger-menu-link">
             <a href="#about">家づくりへの思い</a>
           </li>
-          <li class="burger-menu__link">
+          <li class="l-header__burger-menu-link">
             <a href="#blog">ブログ</a>
           </li>
-          <li class="burger-menu__link">
+          <li class="l-header__burger-menu-link">
             <a href="#contact">お問い合わせ</a>
           </li>
-          <li class="burger-menu__link">
+          <li class="l-header__burger-menu-link">
             <a href="#">Twitter</a>
           </li>
-          <li class="burger-menu__link">
+          <li class="l-header__burger-menu-link">
             <a href="#">Facebook</a>
           </li>
-          <li class="burger-menu__link">
+          <li class="l-header__burger-menu-link">
             <a href="#">Instagram</a>
           </li>
         </ul>
       </nav>
       <!-- ここまでハンバーガーメニュー -->
     </header>
-    <!-- /.l-index-header -->
+    <!-- /.l-header -->
 
-    <section class="l-index-sidebar visible-pc">
-      <ul class="l-index-sidebar__lists">
-        <li class="l-index-sidebar__list">
-          <a href="#">環普</a>
+    <section class="l-sidebar visible-pc">
+      <ul class="l-sidebar__lists">
+        <li class="l-sidebar__list">
+          <a href="#">環普建設</a>
         </li>
-        <li class="l-index-sidebar__list">
+        <li class="l-sidebar__list">
           <a href="#concept">コンセプト</a>
         </li>
-        <li class="l-index-sidebar__list">
+        <li class="l-sidebar__list">
           <a href="#story">建築事例</a>
         </li>
-        <li class="l-index-sidebar__list">
+        <li class="l-sidebar__list">
           <a href="#service">こだわりの家づくり</a>
         </li>
-        <li class="l-index-sidebar__list">
+        <li class="l-sidebar__list">
           <a href="#about">家づくりへの思い</a>
         </li>
-        <li class="l-index-sidebar__list">
+        <li class="l-sidebar__list">
           <a href="#blog">ブログ</a>
         </li>
-        <li class="l-index-sidebar__list">
+        <li class="l-sidebar__list">
           <a href="#contact">お問い合わせ</a>
         </li>
-        <li class="l-index-sidebar__list">
+        <li class="l-sidebar__list">
           <a href="#">Twitter</a>
         </li>
-        <li class="l-index-sidebar__list">
+        <li class="l-sidebar__list">
           <a href="#">Facebook</a>
         </li>
-        <li class="l-index-sidebar__list">
+        <li class="l-sidebar__list">
           <a href="#">Instagram</a>
         </li>
       </ul>
     </section>
-    <!-- /.l-index-sidebar -->
+    <!-- /.l-sidebar -->
 
     <section class="p-index-fv">
       <picture class="p-index-fv__img-wrapper">
         <source
           media="(min-width:1250px)"
-          srcset="img/pc/fv-pc.png 1x, img/pc/fv-pc@2x.png 2x"
+          srcset="img/pc/fv-pc.webp 1x, img/pc/fv-pc@2x.webp 2x"
         />
-        <img loading='lazy' src=img/sp/fv-sp.png srcset=' img/sp/fv-sp.png 1x,
-        img/sp/fv-sp@2x.png 2x ' alt='fv' />
+        <img loading='lazy' src=img/sp/fv-sp.webp srcset=' img/sp/fv-sp.webp 1x,
+        img/sp/fv-sp@2x.webp 2x ' alt='fv' />
       </picture>
       <!-- /p-index-fv__img-wrapper -->
       <h1 class="p-index-fv__heading-wrapper">
@@ -160,10 +189,10 @@
             <picture class="p-index-concept__img-wrapper">
               <source
                 media="(min-width:1250px)"
-                srcset="img/pc/concept-pc.png 1x, img/pc/concept-pc@2x.png 2x"
+                srcset="img/pc/concept-pc.webp 1x, img/pc/concept-pc@2x.webp 2x"
               />
-              <img loading='lazy' src=img/sp/concept-sp.png srcset='
-              img/sp/concept-sp.png 1x, img/sp/concept-sp@2x.png 2x '
+              <img loading='lazy' src=img/sp/concept-sp.webp srcset='
+              img/sp/concept-sp.webp 1x, img/sp/concept-sp@2x.webp 2x '
               alt='concept' />
             </picture>
             <!-- /p-index-concept__img-wrapper -->
@@ -192,10 +221,10 @@
               <picture class="p-index-story__img-wrapper">
                 <source
                   media="(min-width:1250px)"
-                  srcset="img/pc/story01-pc.png 1x, img/pc/story01-pc@2x.png 2x"
+                  srcset="img/pc/story01-pc.webp 1x, img/pc/story01-pc@2x.webp 2x"
                 />
-                <img loading='lazy' src=img/sp/story01-sp.png srcset='
-                img/sp/story01-sp.png 1x, img/sp/story01-sp@2x.png 2x '
+                <img loading='lazy' src=img/sp/story01-sp.webp srcset='
+                img/sp/story01-sp.webp 1x, img/sp/story01-sp@2x.webp 2x '
                 alt='story01' />
               </picture>
               <!-- /p-index-story__img-wrapper -->
@@ -211,10 +240,10 @@
               <picture class="p-index-story__img-wrapper">
                 <source
                   media="(min-width:1250px)"
-                  srcset="img/pc/story02-pc.png 1x, img/pc/story02-pc@2x.png 2x"
+                  srcset="img/pc/story02-pc.webp 1x, img/pc/story02-pc@2x.webp 2x"
                 />
-                <img loading='lazy' src=img/sp/story02-sp.png srcset='
-                img/sp/story02-sp.png 1x, img/sp/story02-sp@2x.png 2x '
+                <img loading='lazy' src=img/sp/story02-sp.webp srcset='
+                img/sp/story02-sp.webp 1x, img/sp/story02-sp@2x.webp 2x '
                 alt='story02' />
               </picture>
               <!-- /p-index-story__img-wrapper -->
@@ -230,10 +259,10 @@
               <picture class="p-index-story__img-wrapper">
                 <source
                   media="(min-width:1250px)"
-                  srcset="img/pc/story03-pc.png 1x, img/pc/story03-pc@2x.png 2x"
+                  srcset="img/pc/story03-pc.webp 1x, img/pc/story03-pc@2x.webp 2x"
                 />
-                <img loading='lazy' src=img/sp/story03-sp.png srcset='
-                img/sp/story03-sp.png 1x, img/sp/story03-sp@2x.png 2x '
+                <img loading='lazy' src=img/sp/story03-sp.webp srcset='
+                img/sp/story03-sp.webp 1x, img/sp/story03-sp@2x.webp 2x '
                 alt='story03' />
               </picture>
               <!-- /p-index-story__img-wrapper -->
@@ -249,10 +278,10 @@
               <picture class="p-index-story__img-wrapper">
                 <source
                   media="(min-width:1250px)"
-                  srcset="img/pc/story04-pc.png 1x, img/pc/story04-pc@2x.png 2x"
+                  srcset="img/pc/story04-pc.webp 1x, img/pc/story04-pc@2x.webp 2x"
                 />
-                <img loading='lazy' src=img/sp/story04-sp.png srcset='
-                img/sp/story04-sp.png 1x, img/sp/story04-sp@2x.png 2x '
+                <img loading='lazy' src=img/sp/story04-sp.webp srcset='
+                img/sp/story04-sp.webp 1x, img/sp/story04-sp@2x.webp 2x '
                 alt='story04' />
               </picture>
               <!-- /p-index-story__img-wrapper -->
@@ -286,10 +315,10 @@
             <picture class="p-index-service__img-wrapper">
               <source
                 media="(min-width:1250px)"
-                srcset="img/pc/service-pc.png 1x, img/pc/service-pc@2x.png 2x"
+                srcset="img/pc/service-pc.webp 1x, img/pc/service-pc@2x.webp 2x"
               />
-              <img loading='lazy' src=img/sp/service-sp.png srcset='
-              img/sp/service-sp.png 1x, img/sp/service-sp@2x.png 2x '
+              <img loading='lazy' src=img/sp/service-sp.webp srcset='
+              img/sp/service-sp.webp 1x, img/sp/service-sp@2x.webp 2x '
               alt='service' />
             </picture>
             <!-- /p-index-service__img-wrapper -->
@@ -299,16 +328,17 @@
               サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
             </p>
             <!-- /.p-index-service__grid-text -->
+            <div class="p-index-service__img-mask"></div><!-- /.p-index-service__img-mask -->
           </div>
           <!-- /.p-index-service__grid-item -->
           <div class="p-index-service__grid-item">
             <picture class="p-index-service__img-wrapper">
               <source
                 media="(min-width:1250px)"
-                srcset="img/pc/service-pc.png 1x, img/pc/service-pc@2x.png 2x"
+                srcset="img/pc/service-pc.webp 1x, img/pc/service-pc@2x.webp 2x"
               />
-              <img loading='lazy' src=img/sp/service-sp.png srcset='
-              img/sp/service-sp.png 1x, img/sp/service-sp@2x.png 2x '
+              <img loading='lazy' src=img/sp/service-sp.webp srcset='
+              img/sp/service-sp.webp 1x, img/sp/service-sp@2x.webp 2x '
               alt='service' />
             </picture>
             <!-- /p-index-service__img-wrapper -->
@@ -318,16 +348,17 @@
               サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
             </p>
             <!-- /.p-index-service__grid-text -->
+            <div class="p-index-service__img-mask"></div><!-- /.p-index-service__img-mask -->
           </div>
           <!-- /.p-index-service__grid-item -->
           <div class="p-index-service__grid-item">
             <picture class="p-index-service__img-wrapper">
               <source
                 media="(min-width:1250px)"
-                srcset="img/pc/service-pc.png 1x, img/pc/service-pc@2x.png 2x"
+                srcset="img/pc/service-pc.webp 1x, img/pc/service-pc@2x.webp 2x"
               />
-              <img loading='lazy' src=img/sp/service-sp.png srcset='
-              img/sp/service-sp.png 1x, img/sp/service-sp@2x.png 2x '
+              <img loading='lazy' src=img/sp/service-sp.webp srcset='
+              img/sp/service-sp.webp 1x, img/sp/service-sp@2x.webp 2x '
               alt='service' />
             </picture>
             <!-- /p-index-service__img-wrapper -->
@@ -337,6 +368,7 @@
               サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
             </p>
             <!-- /.p-index-service__grid-text -->
+            <div class="p-index-service__img-mask"></div><!-- /.p-index-service__img-mask -->
           </div>
           <!-- /.p-index-service__grid-item -->
         </div>
@@ -358,10 +390,10 @@
           <picture class="p-index-about__img-wrapper">
             <source
               media="(min-width:1250px)"
-              srcset="img/pc/about-pc.png 1x, img/pc/about-pc@2x.png 2x"
+              srcset="img/pc/about-pc.webp 1x, img/pc/about-pc@2x.webp 2x"
             />
-            <img loading='lazy' src=img/sp/about-sp.png srcset='
-            img/sp/about-sp.png 1x, img/sp/about-sp@2x.png 2x ' alt='about' />
+            <img loading='lazy' src=img/sp/about-sp.webp srcset='
+            img/sp/about-sp.webp 1x, img/sp/about-sp@2x.webp 2x ' alt='about' />
           </picture>
           <!-- /p-index-about__img-wrapper -->
           <div class="p-index-about__content-wrapper">
@@ -397,10 +429,10 @@
               <picture class="p-index-blog__img-wrapper">
                 <source
                   media="(min-width:1250px)"
-                  srcset="img/pc/blog-pc.png 1x, img/pc/blog-pc@2x.png 2x"
+                  srcset="img/pc/blog-pc.webp 1x, img/pc/blog-pc@2x.webp 2x"
                 />
-                <img loading='lazy' src=img/sp/blog-sp.png srcset='
-                img/sp/blog-sp.png 1x, img/sp/blog-sp@2x.png 2x ' alt='blog' />
+                <img loading='lazy' src=img/sp/blog-sp.webp srcset='
+                img/sp/blog-sp.webp 1x, img/sp/blog-sp@2x.webp 2x ' alt='blog' />
               </picture>
               <!-- /p-index-blog__img-wrapper -->
               <div class="p-index-blog__grid-date">2022.1.14</div>
@@ -412,16 +444,17 @@
                 サンプルテキストサンプルテキスト
               </p>
               <!-- /.p-index-blog__grid-text -->
+              <div class="p-index-blog__img-mask"></div><!-- /.p-index-service__img-mask -->
             </div>
             <!-- /.p-index-blog__grid-item -->
             <div class="p-index-blog__grid-item">
               <picture class="p-index-blog__img-wrapper">
                 <source
                   media="(min-width:1250px)"
-                  srcset="img/pc/blog-pc.png 1x, img/pc/blog-pc@2x.png 2x"
+                  srcset="img/pc/blog-pc.webp 1x, img/pc/blog-pc@2x.webp 2x"
                 />
-                <img loading='lazy' src=img/sp/blog-sp.png srcset='
-                img/sp/blog-sp.png 1x, img/sp/blog-sp@2x.png 2x ' alt='blog' />
+                <img loading='lazy' src=img/sp/blog-sp.webp srcset='
+                img/sp/blog-sp.webp 1x, img/sp/blog-sp@2x.webp 2x ' alt='blog' />
               </picture>
               <!-- /p-index-blog__img-wrapper -->
               <div class="p-index-blog__grid-date">2022.1.14</div>
@@ -433,16 +466,17 @@
                 サンプルテキストサンプルテキスト
               </p>
               <!-- /.p-index-blog__grid-text -->
+              <div class="p-index-blog__img-mask"></div><!-- /.p-index-service__img-mask -->
             </div>
             <!-- /.p-index-blog__grid-item -->
             <div class="p-index-blog__grid-item">
               <picture class="p-index-blog__img-wrapper">
                 <source
                   media="(min-width:1250px)"
-                  srcset="img/pc/blog-pc.png 1x, img/pc/blog-pc@2x.png 2x"
+                  srcset="img/pc/blog-pc.webp 1x, img/pc/blog-pc@2x.webp 2x"
                 />
-                <img loading='lazy' src=img/sp/blog-sp.png srcset='
-                img/sp/blog-sp.png 1x, img/sp/blog-sp@2x.png 2x ' alt='blog' />
+                <img loading='lazy' src=img/sp/blog-sp.webp srcset='
+                img/sp/blog-sp.webp 1x, img/sp/blog-sp@2x.webp 2x ' alt='blog' />
               </picture>
               <!-- /p-index-blog__img-wrapper -->
               <div class="p-index-blog__grid-date">2022.1.14</div>
@@ -454,6 +488,7 @@
                 サンプルテキストサンプルテキスト
               </p>
               <!-- /.p-index-blog__grid-text -->
+              <div class="p-index-blog__img-mask"></div><!-- /.p-index-service__img-mask -->
             </div>
             <!-- /.p-index-blog__grid-item -->
         </div>
@@ -552,54 +587,54 @@
       <!-- /.c-section__inner -->
     </section>
     <!-- /.p-index-contact -->
-    <footer class="l-index-footer">
-      <div class="l-index-footer__grid-wrapper">
-        <div class="l-index-footer__grid-item">
-          <ul class="l-index-footer__lists">
-            <li class="l-index-footer__list-company">株式会社　環普</li>
-            <!-- /.l-index-footer__list -->
-            <li class="l-index-footer__list-address">
+    <footer class="l-footer">
+      <div class="l-footer__grid-wrapper">
+        <div class="l-footer__grid-item">
+          <ul class="l-footer__lists">
+            <li class="l-footer__list-company">株式会社　環普建設</li>
+            <!-- /.l-footer__list -->
+            <li class="l-footer__list-address">
               <span>〒811-1111</span> 福岡県福岡市中央区天神２丁目１−１
             </li>
-            <!-- /.l-index-footer__list -->
+            <!-- /.l-footer__list -->
           </ul>
-          <!-- /.l-index-footer__lists -->
+          <!-- /.l-footer__lists -->
         </div>
-        <!-- /.l-index-footer__grid-item -->
-        <div class="l-index-footer__grid-item">
-          <ul class="l-index-footer__lists">
-            <li class="l-index-footer__list">
+        <!-- /.l-footer__grid-item -->
+        <div class="l-footer__grid-item">
+          <ul class="l-footer__lists">
+            <li class="l-footer__list">
              <a href="#concept">コンセプト</a></li>
-            <!-- /.l-index-footer__list -->
-            <li class="l-index-footer__list">
+            <!-- /.l-footer__list -->
+            <li class="l-footer__list">
               <a href="#story">建築事例</a></li>
-            <!-- /.l-index-footer__list -->
-            <li class="l-index-footer__list">
+            <!-- /.l-footer__list -->
+            <li class="l-footer__list">
               <a href="#service">こだわりの家づくり</a></li>
-            <!-- /.l-index-footer__list -->
-            <li class="l-index-footer__list">
+            <!-- /.l-footer__list -->
+            <li class="l-footer__list">
               <a href="#about">家づくりへの思い</a></li>
-            <!-- /.l-index-footer__list -->
-            <li class="l-index-footer__list">
+            <!-- /.l-footer__list -->
+            <li class="l-footer__list">
               <a href="#blog">ブログ</a></li>
-            <!-- /.l-index-footer__list -->
+            <!-- /.l-footer__list -->
           </ul>
-          <!-- /.l-index-footer__lists -->
+          <!-- /.l-footer__lists -->
         </div>
-        <!-- /.l-index-footer__grid-item -->
-        <div class="l-index-footer__grid-item">
-          <li class="l-index-footer__list-contact">お問い合わせ</li>
-          <!-- /.l-index-footer__list -->
-          <li class="l-index-footer__list-privacy">個人情報保護方針</li>
-          <!-- /.l-index-footer__list -->
+        <!-- /.l-footer__grid-item -->
+        <div class="l-footer__grid-item">
+          <li class="l-footer__list-contact">お問い合わせ</li>
+          <!-- /.l-footer__list -->
+          <li class="l-footer__list-privacy">個人情報保護方針</li>
+          <!-- /.l-footer__list -->
         </div>
-        <!-- /.l-index-footer__grid-item -->
+        <!-- /.l-footer__grid-item -->
       </div>
-      <!-- /.l-index-footer__grid-wrapper -->
+      <!-- /.l-footer__grid-wrapper -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/script.js"></script>
     <script src="/js/slick.min.js"></script>
+    <script src="/js/script.js"></script>
     <div id="fb-root"></div>
     <script
       async
