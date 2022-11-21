@@ -39,7 +39,7 @@
     justify-content: flex-end;
     transform: translateX(-10px);
     &::after{
-      content:url(/img/component/arrow.png);
+      content:url(/img/component/arrow.svg);
       position: absolute;
       line-height: 0;
       transform: translate(15px,15px);
