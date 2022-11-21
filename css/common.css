@@ -71,7 +71,7 @@ table {
   -moz-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   transform: translate(15px, 15px);
-  background-color: #76706A;
+  background-color: #76706a;
 }
 .l-header .l-header__burger-btn span:nth-child(1) {
   top: 11px;
@@ -119,7 +119,7 @@ table {
   visibility: hidden;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
-  background: #F2F2ED;
+  background: #f2f2ed;
   overscroll-behavior-y: none;
 }
 .l-header__burger-menu::before {
@@ -155,7 +155,7 @@ table {
 
 .l-header__burger-menu-link:nth-of-type(1) {
   font-size: 2rem;
-  color: #76706A;
+  color: #76706a;
   display: flex;
   gap: 1ch;
 }
@@ -175,7 +175,7 @@ nav.l-header__burger-menu.active {
   }
 }
 .l-footer {
-  background-color: #76706A;
+  background-color: #76706a;
   padding-bottom: 40px;
 }
 .l-footer .l-footer__grid-wrapper {
@@ -184,7 +184,7 @@ nav.l-header__burger-menu.active {
   grid-template-rows: 108px 216px 61px;
   grid-column-gap: 0px;
   grid-row-gap: 24px;
-  color: #FFF;
+  color: #fff;
   margin-left: 4.267vw;
 }
 .l-footer .l-footer__list-company {
@@ -275,7 +275,7 @@ nav.l-header__burger-menu.active {
   }
   .l-sidebar .l-sidebar__list:nth-of-type(1) {
     font-size: 2rem;
-    color: #76706A;
+    color: #76706a;
     display: flex;
     gap: 1ch;
   }
@@ -495,7 +495,7 @@ nav.l-header__burger-menu.active {
   }
 }
 .p-index-service {
-  background-color: #F2F2ED;
+  background-color: #f2f2ed;
   padding-bottom: 48px;
 }
 .p-index-service .p-index-service__grid-wrapper {
@@ -546,7 +546,7 @@ nav.l-header__burger-menu.active {
 
 @media screen and (min-width: 1250px) {
   .p-index-service {
-    background-color: #F2F2ED;
+    background-color: #f2f2ed;
     padding-bottom: 56px;
   }
   .p-index-service .p-index-service__grid-wrapper {
@@ -590,7 +590,7 @@ nav.l-header__burger-menu.active {
   }
 }
 .p-index-about {
-  background-color: #F2F2ED;
+  background-color: #f2f2ed;
   height: 896px;
 }
 .p-index-about .p-index-about__grid-wrapper {
@@ -620,7 +620,7 @@ nav.l-header__burger-menu.active {
   grid-area: 1/1/2/2;
 }
 .p-index-about .p-index-about__content-wrapper {
-  background-color: #FFF;
+  background-color: #fff;
   width: 320px;
   height: 376px;
   z-index: 1;
@@ -649,7 +649,7 @@ nav.l-header__burger-menu.active {
 
 @media screen and (min-width: 1250px) {
   .p-index-about {
-    background-color: #F2F2ED;
+    background-color: #f2f2ed;
     height: 800px;
   }
   .p-index-about .p-index-about__grid-wrapper {
@@ -822,7 +822,7 @@ nav.l-header__burger-menu.active {
   }
 }
 .p-index-contact {
-  background-color: #F2F2ED;
+  background-color: #f2f2ed;
   padding-bottom: 56px;
 }
 .p-index-contact .p-index-contact__title {

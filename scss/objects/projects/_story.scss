@@ -5,77 +5,76 @@
 // storyセクション
 .p-index-story {
   padding-bottom: 139px;
-  .p-index-story__title{
+  .p-index-story__title {
     font-size: 2.4rem;
-    span{
+    span {
       display: block;
       font-size: 1.4rem;
       padding-bottom: 8px;
     }
   }
-  .p-index-story__text{
+  .p-index-story__text {
     margin-top: 40px;
     line-height: 24px;
   }
-  .p-index-story__slider-wrapper{
+  .p-index-story__slider-wrapper {
     margin-top: 56px;
   }
-  .p-index-story__list{
-    margin:0 20px;
+  .p-index-story__list {
+    margin: 0 20px;
   }
-  .p-index-story__list-title{
+  .p-index-story__list-title {
     margin-top: 32px;
     font-size: 2.4rem;
   }
-  .p-index-story__list-text{
+  .p-index-story__list-text {
     margin-top: 16px;
     line-height: 24px;
   }
-  .p-index-story__scroll{
+  .p-index-story__scroll {
     margin-top: 66px;
-    text-align:center;
+    text-align: center;
     font-size: 2rem;
     display: flex;
     justify-content: flex-end;
     transform: translateX(-10px);
-    &::after{
-      content:url(/img/component/arrow.svg);
+    &::after {
+      content: url(/img/component/arrow.svg);
       position: absolute;
       line-height: 0;
-      transform: translate(15px,15px);
+      transform: translate(15px, 15px);
     }
   }
 }
 
-
 @include m.mq(pc) {
   .p-index-story {
     padding-bottom: 139px;
-    .p-index-story__title{
+    .p-index-story__title {
       font-size: 3.2rem;
     }
-    .p-index-story__text{
+    .p-index-story__text {
       margin-top: 16px;
       width: 720px;
     }
     .c-section__inner {
       max-width: 1096px;
-      margin-right:24px;
+      margin-right: 24px;
     }
-    .p-index-story__slider-wrapper{
+    .p-index-story__slider-wrapper {
       margin-top: 120px;
     }
-    .p-index-story__list{
-      margin:0 28px;
+    .p-index-story__list {
+      margin: 0 28px;
     }
-    .p-index-story__list-title{
+    .p-index-story__list-title {
       margin-top: 24px;
     }
-    .p-index-story__list-text{
+    .p-index-story__list-text {
       width: 520px;
     }
-    .p-index-story__scroll{
+    .p-index-story__scroll {
       transform: translateX(-100px);
     }
   }
-  }
+}

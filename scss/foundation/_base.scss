@@ -15,8 +15,8 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: "Times New Roman","游明朝体", "Yu Mincho", "YuMincho", serif;
-  font-weight:normal;
+  font-family: "Times New Roman", "游明朝体", "Yu Mincho", "YuMincho", serif;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   min-width: 375px;
@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
   letter-spacing: 0;
 }
-body.fixed{
+body.fixed {
   height: 100%;
   overflow: hidden;
 }
@@ -32,14 +32,14 @@ table {
   border-collapse: separate;
   border-spacing: 1px;
 }
-.visible-pc{
+.visible-pc {
   display: none;
 }
 @include m.mq(pc) {
-  .visible-pc{
+  .visible-pc {
     display: block;
   }
-  .visible-sp{
+  .visible-sp {
     display: none;
   }
 }

@@ -93,7 +93,7 @@
       padding-bottom: 32px;
       transform: translateX(-25px);
     }
-    .p-index-contact__list:nth-of-type(2){
+    .p-index-contact__list:nth-of-type(2) {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -124,6 +124,5 @@
       content: url(/img/component/contact.svg);
       padding-right: 5px;
     }
-
   }
 }

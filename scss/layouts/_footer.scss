@@ -14,58 +14,58 @@
     color: import.$color-white;
     margin-left: 4.267vw;
   }
-  .l-footer__list-company{
+  .l-footer__list-company {
     margin-top: 40px;
   }
-  .l-footer__list-address{
+  .l-footer__list-address {
     margin-top: 16px;
-    span{
+    span {
       display: block;
     }
   }
-  .l-footer__grid-item:nth-last-of-type(2){
-    .l-footer__list{
+  .l-footer__grid-item:nth-last-of-type(2) {
+    .l-footer__list {
       padding-bottom: 24px;
     }
-    .l-footer__list:last-child{
+    .l-footer__list:last-child {
       padding: 0;
     }
   }
-  .l-footer__list-contact{
+  .l-footer__list-contact {
     padding-bottom: 24px;
   }
 }
 
 @include m.mq(pc) {
-    .l-footer {
-      padding-bottom: 0px;
-      .l-footer__grid-wrapper {
-        display: grid;
-        grid-template-columns: 66.042% 144px 128px;
-        grid-template-rows: 240px;
-        grid-column-gap: 40px;
-        grid-row-gap: 0px;
+  .l-footer {
+    padding-bottom: 0px;
+    .l-footer__grid-wrapper {
+      display: grid;
+      grid-template-columns: 66.042% 144px 128px;
+      grid-template-rows: 240px;
+      grid-column-gap: 40px;
+      grid-row-gap: 0px;
+    }
+    .l-footer__grid-item {
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+    .l-footer__list-company {
+      margin-top: 8px;
+    }
+    .l-footer__list-address {
+      margin-top: 7px;
+      span {
+        display: inline-block;
       }
-      .l-footer__grid-item{
-        margin: 0 auto;
-        margin-top: 40px;
-      }
-      .l-footer__list-company{
-        margin-top: 8px;
-      }
-      .l-footer__list-address{
-        margin-top: 7px;
-        span{
-          display: inline-block;
-        }
-      }
-      .l-footer__grid-item:nth-last-of-type(2){
-        .l-footer__list{
-          padding-bottom: 8px;
-        }
-      }
-      .l-footer__list-contact{
+    }
+    .l-footer__grid-item:nth-last-of-type(2) {
+      .l-footer__list {
         padding-bottom: 8px;
       }
+    }
+    .l-footer__list-contact {
+      padding-bottom: 8px;
+    }
   }
 }

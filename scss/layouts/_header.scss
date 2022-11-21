@@ -5,7 +5,7 @@
 // headerセクション
 .l-header {
   height: 92px;
-	.l-header__burger-btn {
+  .l-header__burger-btn {
     position: absolute;
     z-index: 3;
     top: 0;
@@ -23,19 +23,19 @@
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-    transform: translate(15px,15px);
+    transform: translate(15px, 15px);
     background-color: import.$color-main;
-    }
-    .l-header__burger-btn span:nth-child(1) {
-      top: 11px;
-    }
-    .l-header__burger-btn span:nth-child(2) {
-      top: 23px;
-    }
-    .l-header__burger-btn span:nth-child(3) {
-      top: 35px;
-    }
-    }
+  }
+  .l-header__burger-btn span:nth-child(1) {
+    top: 11px;
+  }
+  .l-header__burger-btn span:nth-child(2) {
+    top: 23px;
+  }
+  .l-header__burger-btn span:nth-child(3) {
+    top: 35px;
+  }
+}
 /* ナビ開いてる時のバツボタン */
 .l-header__burger-btn.active span:nth-child(1) {
   top: 36px;
@@ -104,11 +104,11 @@
   z-index: 1;
   width: fit-content;
 }
-.l-header__burger-menu-link:nth-of-type(1){
-  font-size: 2.0rem;
-  color:import.$color-main;
-  &::before{
-    content:url(/img/component/logo.svg);
+.l-header__burger-menu-link:nth-of-type(1) {
+  font-size: 2rem;
+  color: import.$color-main;
+  &::before {
+    content: url(/img/component/logo.svg);
   }
   display: flex;
   gap: 1ch;
