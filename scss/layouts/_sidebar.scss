@@ -4,7 +4,7 @@
 
 @include m.mq(pc) {
 	// sidebarセクション
-.l-index-sidebar {
+.l-sidebar {
 	width:max(13.333vw, 192px); //最小値を設定したい場合
 	height: 100vh;
 	background-color: import.$color-sidebar;
@@ -25,7 +25,7 @@
     opacity: 0.5;
 		z-index: -1;
   }
-	.l-index-sidebar__lists{
+	.l-sidebar__lists{
 		text-align: left;
 		margin-left:max(1.667vw, 24px); //最小値を設定したい場合
 		display: grid;
@@ -36,14 +36,14 @@
 		margin-top: 42px;
 	}
 
-	.l-index-sidebar__list{
+	.l-sidebar__list{
 		transition: 0.4s all;
 	}
-	.l-index-sidebar__list:nth-of-type(1){
+	.l-sidebar__list:nth-of-type(1){
 		font-size: 2.0rem;
 		color:import.$color-main;
 		&::before{
-			content:url(/img/component/logo.png);
+			content:url(/img/component/logo.svg);
 		}
 		display: flex;
 		gap: 1ch;
