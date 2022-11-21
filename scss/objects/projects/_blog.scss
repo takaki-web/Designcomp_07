@@ -25,7 +25,6 @@
       transform: translateY(5px);
       margin-left: 16px;
     }
-
       }
       .p-index-blog__grid-item {
             margin: 0 auto;
@@ -67,8 +66,20 @@
     .p-index-blog__title{
       margin-top: 64px;
         }
+        .p-index-blog__img-mask{
+          background-color: import.$color-mask;
+          width: 280px;
+          height: 176px;
+          position: absolute;
+          top: 0;
+          opacity: 0;
+          &:hover{
+            opacity: 1;
+          }
+        }
         .p-index-blog__grid-item {
           margin-top: 120px;
+          position: relative;
         }
         .p-index-blog__grid-text{
           width: 280px;
