@@ -29,12 +29,12 @@ $(".l-header__burger-menu-link, .l-header__burger-menu-link a").on("click", func
 
 $(function () {
   $("#js-p-index-story__slider").slick({
-    arrows: false,
     autoplay: true,
     autoplaySpeed: 4000,
     adaptiveHeight: true,
     slidesToShow: 2,
     speed: 3000,
+    nextArrow: '<div class="p-index-story__scroll slide-arrow next-arrow">scroll</div>',
     responsive: [
       {
         breakpoint: 1250,
