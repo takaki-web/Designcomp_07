@@ -38,7 +38,7 @@
       /*外枠からはみ出さないように調整*/
       max-height: 1000px;
       /*アスペクト比の維持*/
-      aspect-ratio: 25/48;
+      aspect-ratio: 375/720;
     }
   }
 }
@@ -74,8 +74,8 @@
       margin: 0;
       img {
         margin-top: 0;
-        width: 640px;
-        aspect-ratio: inherit;
+        max-width: 640px;
+        aspect-ratio: 640/720;
       }
     }
   }

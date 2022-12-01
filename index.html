@@ -37,10 +37,8 @@
     <link rel="stylesheet" href="/css/destyle.css" />
     <!-- commoncss読み込み-->
     <link rel="stylesheet" href="/css/common.css" />
-    <!-- slickcss読み込み-->
-    <link rel="stylesheet" href="/css/slick.css" />
-    <!-- slickcss読み込み-->
-    <link rel="stylesheet" href="/css/slick-theme.css" />
+    <!-- splidecss読み込み-->
+    <link rel="stylesheet" href="/css/splide.min.css" />
     <!--サイト読み込み高速化-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -132,13 +130,23 @@
     <!-- /.l-sidebar -->
 
     <section class="p-index-fv">
-      <picture class="p-index-fv__img-wrapper">
-        <source
-          media="(min-width:1250px)"
-          srcset="img/pc/fv-pc.webp 1x, img/pc/fv-pc@2x.webp 2x"
-        />
-        <img loading='lazy' src=img/sp/fv-sp.webp srcset=' img/sp/fv-sp.webp 1x,
-        img/sp/fv-sp@2x.webp 2x ' alt='fv' />
+      <picture class='p-index-fv__img-wrapper'>
+      <source
+      type='image/webp'
+      media='(min-width:1250px)'
+      srcset='img/pc/fv-pc.webp 1x,img/pc/fv-pc@2x.webp 2x'
+      width='1120' height='732'
+      />
+      <source
+      type='image/webp'
+      srcset='img/sp/fv-sp.webp 1x,img/sp/fv-sp@2x.webp 2x'
+      width='375' height='575'
+      />
+      <img
+      src=img/sp/fv-sp.webp
+      alt='fv'
+      width='375' height='575'
+      />
       </picture>
       <!-- /p-index-fv__img-wrapper -->
       <h1 class="p-index-fv__heading-wrapper">
@@ -172,14 +180,23 @@
           </div>
           <!-- /.p-index-concept__grid-item -->
           <div class="p-index-concept__grid-item">
-            <picture class="p-index-concept__img-wrapper">
-              <source
-                media="(min-width:1250px)"
-                srcset="img/pc/concept-pc.webp 1x, img/pc/concept-pc@2x.webp 2x"
-              />
-              <img loading='lazy' src=img/sp/concept-sp.webp srcset='
-              img/sp/concept-sp.webp 1x, img/sp/concept-sp@2x.webp 2x '
-              alt='concept' />
+            <picture class='p-index-concept__img-wrapper'>
+            <source
+            type='image/webp'
+            media='(min-width:1250px)'
+            srcset='img/pc/concept-pc.webp 1x,img/pc/concept-pc@2x.webp 2x'
+            width='640' height='720'
+            />
+            <source
+            type='image/webp'
+            srcset='img/sp/concept-sp.webp 1x,img/sp/concept-sp@2x.webp 2x'
+            width='375' height='720'
+            />
+            <img
+            src=img/sp/concept-sp.webp
+            alt='concept'
+            width='375' height='720'
+            />
             </picture>
             <!-- /p-index-concept__img-wrapper -->
           </div>
@@ -202,97 +219,136 @@
         </p>
         <!-- /.p-index-story__text -->
         <div class="p-index-story__slider-wrapper">
-          <ul class="p-index-story__lists" id="js-p-index-story__slider">
-            <li class="p-index-story__list">
-              <picture class="p-index-story__img-wrapper">
-                <source
-                  media="(min-width:1250px)"
-                  srcset="
-                    img/pc/story01-pc.webp    1x,
-                    img/pc/story01-pc@2x.webp 2x
-                  "
-                />
-                <img loading='lazy' src=img/sp/story01-sp.webp srcset='
-                img/sp/story01-sp.webp 1x, img/sp/story01-sp@2x.webp 2x '
-                alt='story01' />
-              </picture>
-              <!-- /p-index-story__img-wrapper -->
-              <h3 class="p-index-story__list-title">タイトルタイトル</h3>
-              <!-- /.p-index-story__list-title -->
-              <p class="p-index-story__list-text">
-                サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-              </p>
-              <!-- /.p-index-story__list-text -->
-            </li>
-            <!-- /.p-index-story__list -->
-            <li class="p-index-story__list">
-              <picture class="p-index-story__img-wrapper">
-                <source
-                  media="(min-width:1250px)"
-                  srcset="
-                    img/pc/story02-pc.webp    1x,
-                    img/pc/story02-pc@2x.webp 2x
-                  "
-                />
-                <img loading='lazy' src=img/sp/story02-sp.webp srcset='
-                img/sp/story02-sp.webp 1x, img/sp/story02-sp@2x.webp 2x '
-                alt='story02' />
-              </picture>
-              <!-- /p-index-story__img-wrapper -->
-              <h3 class="p-index-story__list-title">タイトルタイトル</h3>
-              <!-- /.p-index-story__list-title -->
-              <p class="p-index-story__list-text">
-                サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-              </p>
-              <!-- /.p-index-story__list-text -->
-            </li>
-            <!-- /.p-index-story__list -->
-            <li class="p-index-story__list">
-              <picture class="p-index-story__img-wrapper">
-                <source
-                  media="(min-width:1250px)"
-                  srcset="
-                    img/pc/story03-pc.webp    1x,
-                    img/pc/story03-pc@2x.webp 2x
-                  "
-                />
-                <img loading='lazy' src=img/sp/story03-sp.webp srcset='
-                img/sp/story03-sp.webp 1x, img/sp/story03-sp@2x.webp 2x '
-                alt='story03' />
-              </picture>
-              <!-- /p-index-story__img-wrapper -->
-              <h3 class="p-index-story__list-title">タイトルタイトル</h3>
-              <!-- /.p-index-story__list-title -->
-              <p class="p-index-story__list-text">
-                サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-              </p>
-              <!-- /.p-index-story__list-text -->
-            </li>
-            <!-- /.p-index-story__list -->
-            <li class="p-index-story__list">
-              <picture class="p-index-story__img-wrapper">
-                <source
-                  media="(min-width:1250px)"
-                  srcset="
-                    img/pc/story04-pc.webp    1x,
-                    img/pc/story04-pc@2x.webp 2x
-                  "
-                />
-                <img loading='lazy' src=img/sp/story04-sp.webp srcset='
-                img/sp/story04-sp.webp 1x, img/sp/story04-sp@2x.webp 2x '
-                alt='story04' />
-              </picture>
-              <!-- /p-index-story__img-wrapper -->
-              <h3 class="p-index-story__list-title">タイトルタイトル</h3>
-              <!-- /.p-index-story__list-title -->
-              <p class="p-index-story__list-text">
-                サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-              </p>
-              <!-- /.p-index-story__list-text -->
-            </li>
-            <!-- /.p-index-story__list -->
-          </ul>
-          <!-- /.p-index-story__lists -->
+          <div class="splide" id="slider1">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <picture class="p-index-story__img-wrapper">
+                    <source
+                      type="image/webp"
+                      media="(min-width:1250px)"
+                      srcset="
+                        img/pc/story01-pc.webp    1x,
+                        img/pc/story01-pc@2x.webp 2x
+                      "
+                      width="520"
+                      height="360"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/sp/story01-sp.webp    1x,
+                        img/sp/story01-sp@2x.webp 2x
+                      "
+                      width="320"
+                      height="220"
+                    />
+                    <img src=img/sp/story01-sp.webp alt='story01'
+                    width='320' height='220' />
+                  </picture>
+                  <!-- /p-index-story__img-wrapper -->
+                  <h3 class="p-index-story__list-title">タイトルタイトル</h3>
+                  <p class="p-index-story__list-text">
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                  </p>
+                  <!-- /.p-index-story__list-text -->
+                </li>
+                <li class="splide__slide">
+                  <picture class="p-index-story__img-wrapper">
+                    <source
+                      type="image/webp"
+                      media="(min-width:1250px)"
+                      srcset="
+                        img/pc/story02-pc.webp    1x,
+                        img/pc/story02-pc@2x.webp 2x
+                      "
+                      width="520"
+                      height="360"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/sp/story02-sp.webp    1x,
+                        img/sp/story02-sp@2x.webp 2x
+                      "
+                      width="320"
+                      height="220"
+                    />
+                    <img src=img/sp/story02-sp.webp alt='story02'
+                    width='320' height='220' />
+                  </picture>
+                  <!-- /p-index-story__img-wrapper -->
+                  <h3 class="p-index-story__list-title">タイトルタイトル</h3>
+                  <p class="p-index-story__list-text">
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                  </p>
+                  <!-- /.p-index-story__list-text -->
+                </li>
+                <li class="splide__slide">
+                  <picture class="p-index-story__img-wrapper">
+                    <source
+                      type="image/webp"
+                      media="(min-width:1250px)"
+                      srcset="
+                        img/pc/story03-pc.webp    1x,
+                        img/pc/story03-pc@2x.webp 2x
+                      "
+                      width="520"
+                      height="360"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/sp/story03-sp.webp    1x,
+                        img/sp/story03-sp@2x.webp 2x
+                      "
+                      width="320"
+                      height="220"
+                    />
+                    <img src=img/sp/story03-sp.webp alt='story03'
+                    width='320' height='220' />
+                  </picture>
+                  <!-- /p-index-story__img-wrapper -->
+                  <h3 class="p-index-story__list-title">タイトルタイトル</h3>
+                  <p class="p-index-story__list-text">
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                  </p>
+                  <!-- /.p-index-story__list-text -->
+                </li>
+                <li class="splide__slide">
+                  <picture class="p-index-story__img-wrapper">
+                    <source
+                      type="image/webp"
+                      media="(min-width:1250px)"
+                      srcset="
+                        img/pc/story04-pc.webp    1x,
+                        img/pc/story04-pc@2x.webp 2x
+                      "
+                      width="520"
+                      height="360"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/sp/story04-sp.webp    1x,
+                        img/sp/story04-sp@2x.webp 2x
+                      "
+                      width="320"
+                      height="220"
+                    />
+                    <img src=img/sp/story04-sp.webp alt='story04'
+                    width='320' height='220' />
+                  </picture>
+                  <!-- /p-index-story__img-wrapper -->
+                  <h3 class="p-index-story__list-title">タイトルタイトル</h3>
+                  <p class="p-index-story__list-text">
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                  </p>
+                  <!-- /.p-index-story__list-text -->
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <!-- /.p-index-story__slider-wrapper -->
       </div>
@@ -308,14 +364,23 @@
           </h2>
           <!-- /.p-index-service__title -->
           <div class="p-index-service__grid-item">
-            <picture class="p-index-service__img-wrapper">
-              <source
-                media="(min-width:1250px)"
-                srcset="img/pc/service-pc.webp 1x, img/pc/service-pc@2x.webp 2x"
-              />
-              <img loading='lazy' src=img/sp/service-sp.webp srcset='
-              img/sp/service-sp.webp 1x, img/sp/service-sp@2x.webp 2x '
-              alt='service' />
+            <picture class='p-index-service__img-wrapper'>
+            <source
+            type='image/webp'
+            media='(min-width:1250px)'
+            srcset='img/pc/service-pc.webp 1x,img/pc/service-pc@2x.webp 2x'
+            width='280' height='176'
+            />
+            <source
+            type='image/webp'
+            srcset='img/sp/service-sp.webp 1x,img/sp/service-sp@2x.webp 2x'
+            width='343' height='216'
+            />
+            <img
+            src=img/sp/service-sp.webp
+            alt='service'
+            width='343' height='216'
+            />
             </picture>
             <!-- /p-index-service__img-wrapper -->
             <h3 class="p-index-service__grid-title">タイトルタイトル</h3>
@@ -329,17 +394,26 @@
           </div>
           <!-- /.p-index-service__grid-item -->
           <div class="p-index-service__grid-item">
-            <picture class="p-index-service__img-wrapper">
+            <picture class='p-index-service__img-wrapper'>
               <source
-                media="(min-width:1250px)"
-                srcset="img/pc/service-pc.webp 1x, img/pc/service-pc@2x.webp 2x"
+              type='image/webp'
+              media='(min-width:1250px)'
+              srcset='img/pc/service-pc.webp 1x,img/pc/service-pc@2x.webp 2x'
+              width='280' height='176'
               />
-              <img loading='lazy' src=img/sp/service-sp.webp srcset='
-              img/sp/service-sp.webp 1x, img/sp/service-sp@2x.webp 2x '
-              alt='service' />
-            </picture>
-            <!-- /p-index-service__img-wrapper -->
-            <h3 class="p-index-service__grid-title">タイトルタイトル</h3>
+              <source
+              type='image/webp'
+              srcset='img/sp/service-sp.webp 1x,img/sp/service-sp@2x.webp 2x'
+              width='343' height='216'
+              />
+              <img
+              src=img/sp/service-sp.webp
+              alt='service'
+              width='343' height='216'
+              />
+              </picture>
+              <!-- /p-index-service__img-wrapper -->
+              <h3 class="p-index-service__grid-title">タイトルタイトル</h3>
             <!-- /.p-index-service__grid-title -->
             <p class="p-index-service__grid-text">
               サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
@@ -350,17 +424,26 @@
           </div>
           <!-- /.p-index-service__grid-item -->
           <div class="p-index-service__grid-item">
-            <picture class="p-index-service__img-wrapper">
+            <picture class='p-index-service__img-wrapper'>
               <source
-                media="(min-width:1250px)"
-                srcset="img/pc/service-pc.webp 1x, img/pc/service-pc@2x.webp 2x"
+              type='image/webp'
+              media='(min-width:1250px)'
+              srcset='img/pc/service-pc.webp 1x,img/pc/service-pc@2x.webp 2x'
+              width='280' height='176'
               />
-              <img loading='lazy' src=img/sp/service-sp.webp srcset='
-              img/sp/service-sp.webp 1x, img/sp/service-sp@2x.webp 2x '
-              alt='service' />
-            </picture>
-            <!-- /p-index-service__img-wrapper -->
-            <h3 class="p-index-service__grid-title">タイトルタイトル</h3>
+              <source
+              type='image/webp'
+              srcset='img/sp/service-sp.webp 1x,img/sp/service-sp@2x.webp 2x'
+              width='343' height='216'
+              />
+              <img
+              src=img/sp/service-sp.webp
+              alt='service'
+              width='343' height='216'
+              />
+              </picture>
+              <!-- /p-index-service__img-wrapper -->
+              <h3 class="p-index-service__grid-title">タイトルタイトル</h3>
             <!-- /.p-index-service__grid-title -->
             <p class="p-index-service__grid-text">
               サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
@@ -386,15 +469,25 @@
             家造りへの思い
           </h2>
           <!-- /.p-index-about__title -->
-          <picture class="p-index-about__img-wrapper">
+          <picture class='p-index-about__img-wrapper'>
             <source
-              media="(min-width:1250px)"
-              srcset="img/pc/about-pc.webp 1x, img/pc/about-pc@2x.webp 2x"
+            type='image/webp'
+            media='(min-width:1250px)'
+            srcset='img/pc/about-pc.webp 1x,img/pc/about-pc@2x.webp 2x'
+            width='720' height='680'
             />
-            <img loading='lazy' src=img/sp/about-sp.webp srcset='
-            img/sp/about-sp.webp 1x, img/sp/about-sp@2x.webp 2x ' alt='about' />
-          </picture>
-          <!-- /p-index-about__img-wrapper -->
+            <source
+            type='image/webp'
+            srcset='img/sp/about-sp.webp 1x,img/sp/about-sp@2x.webp 2x'
+            width='286' height='400'
+            />
+            <img
+            src=img/sp/about-sp.webp
+            alt='about'
+            width='286' height='400'
+            />
+            </picture>
+            <!-- /p-index-about__img-wrapper -->
           <div class="p-index-about__content-wrapper">
             <p class="p-index-about__text">
               サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルサンプルテキストサンプルテキストサンプルテキストサンプルテキスト。
@@ -655,8 +748,7 @@
       </div>
       <!-- /.l-footer__grid-wrapper -->
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/slick.min.js"></script>
+    <script src="/js/splide.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

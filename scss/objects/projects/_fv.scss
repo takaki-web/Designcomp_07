@@ -10,10 +10,8 @@
     justify-content: center;
     img {
       width: 100%;
-      /*外枠からはみ出さないように調整*/
-      max-height: 1000px;
-      /*アスペクト比の維持*/
-      aspect-ratio: 15/23;
+      max-width: 100%;
+      aspect-ratio: auto 375/575;
     }
   }
   .p-index-fv__heading-text {
@@ -36,8 +34,9 @@
     .p-index-fv__img-wrapper {
       justify-content: end;
       img {
-        width: 1120px;
-        aspect-ratio: inherit;
+        width: auto;
+        aspect-ratio: auto 1120/732;
+        height: auto;
       }
     }
 
